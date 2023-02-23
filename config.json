@@ -25,11 +25,11 @@
   },
   "machines": [
     {
-      "name": "Machine 1",
+      "name": "Machine1",
       "topic": "oee/machine1"
     },
     {
-      "name": "Machine 2",
+      "name": "Machine2",
       "topic": "oee/machine2"
     }
   ]
