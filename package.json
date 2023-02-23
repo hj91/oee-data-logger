@@ -6,7 +6,7 @@
 "dependencies": {
 "influx": "5.9.3",
 "mqtt": "^4.2.1",
-"dotenv": "^10.4.0",
+"dotenv": "16.0.3",
 "config": "^3.3.6"
 },
 "scripts": {
