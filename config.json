@@ -1,0 +1,36 @@
+{
+  "mqtt": {
+    "servers": [
+      {
+        "host": "mqtt-broker1.example.com",
+        "port": 1883,
+        "username": "username",
+        "password": "password"
+      },
+      {
+        "host": "mqtt-broker2.example.com",
+        "port": 1883,
+        "username": "username",
+        "password": "password"
+      }
+    ]
+  },
+  "influxdb": {
+    "host": "influxdb.example.com",
+    "port": 8086,
+    "database": "oee",
+    "username": "username",
+    "password": "password",
+    "logging_interval": 10000
+  },
+  "machines": [
+    {
+      "name": "Machine 1",
+      "topic": "oee/machine1"
+    },
+    {
+      "name": "Machine 2",
+      "topic": "oee/machine2"
+    }
+  ]
+}
