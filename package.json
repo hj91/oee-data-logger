@@ -1,18 +1,18 @@
 {
-"name": "oee-data-logger",
-"version": "0.0.1",
-"description": "Node.js program to log OEE data to InfluxDB",
-"main": "index.js",
-"dependencies": {
-"influx": "5.9.3",
-"mqtt": "^4.2.1",
-"dotenv": "16.0.3",
-"config": "^3.3.6"
-},
-"scripts": {
-"start": "node index.js"
-},
-"author": "Harshad Joshi",
-"license": "MIT",
-"readme": "This is a Node.js program to log OEE data to InfluxDB.\n\nUsage:\n1. Clone the repository.\n2. Install the dependencies by running npm install.\n3. Create a .env file and add the necessary environment variables as described in the config.js file.\n4. Run the program using npm start.\n\nGitHub Repository: https://github.com/hj91/oee-data-logger\nEmail: firewalrus@gmail.com"
+  "name": "oee-data-logger",
+  "version": "0.0.1",
+  "description": "Node.js program to log OEE data to InfluxDB",
+  "main": "index.js",
+  "dependencies": {
+    "config": "^3.3.6",
+    "dotenv": "16.0.3",
+    "influx": "^5.9.3",
+    "mqtt": "^4.2.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Harshad Joshi",
+  "license": "MIT",
+  "readme": "This is a Node.js program to log OEE data to InfluxDB.\n\nUsage:\n1. Clone the repository.\n2. Install the dependencies by running npm install.\n3. Create a .env file and add the necessary environment variables as described in the config.js file.\n4. Run the program using npm start.\n\nGitHub Repository: https://github.com/hj91/oee-data-logger\nEmail: firewalrus@gmail.com"
 }
