@@ -4,7 +4,7 @@
 "description": "Node.js program to log OEE data to InfluxDB",
 "main": "index.js",
 "dependencies": {
-"influx": "^6.0.4",
+"influx": "5.9.3",
 "mqtt": "^4.2.1",
 "dotenv": "^10.4.0",
 "config": "^3.3.6"
