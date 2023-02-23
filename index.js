@@ -1,9 +1,9 @@
 const mqtt = require('mqtt');
-const Influx = require('influx');
+const { InfluxDB } = require('influx');
 const config = require('./config.json');
 
 // Create a new InfluxDB instance with configuration options from the config file
-const influx = new Influx.InfluxDB(config.influxdb);
+const influx = new InfluxDB(config.influxdb);
 
 // Connect to MQTT broker with configuration options from the config file
 let client = mqtt.connect(config.mqtt);
@@ -24,14 +24,14 @@ client.on('close', () => {
 });
 
 // Handle InfluxDB connection errors
-influx.on('error', (error) => {
-  console.error('InfluxDB error:', error);
-});
+//influx.on ('error', (error) => {
+//  console.log('InfluxDB error:', error);
+//});
 
 // Handle InfluxDB connection close
-influx.on('close', () => {
-  console.log('InfluxDB connection closed');
-});
+//influx.on('close', () => {
+//  console.log('InfluxDB connection closed');
+//});
 
 // Subscribe to MQTT topics for each machine listed in the config file
 for (let machine of config.machines) {
@@ -75,3 +75,4 @@ client.on('message', (topic, message) => {
     });
   }, config.loggingInterval);
 });
+
