@@ -73,6 +73,6 @@ client.on('message', (topic, message) => {
     .catch((error) => {
       console.error(`Failed to write data for machine ${machine.name}:`, error);
     });
-  }, config.loggingInterval);
+  }, config.influxdb.logging_interval);
 });
 
