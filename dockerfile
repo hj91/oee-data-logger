@@ -12,7 +12,7 @@ COPY config.json ./
 # Install the dependencies
 RUN npm install -g --production
 
-# Copy the oee-cli.js file to the working directory
+# Copy the oee-calculator.js file to the working directory
 COPY . .
 
 
